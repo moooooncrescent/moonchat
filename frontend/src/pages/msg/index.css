@@ -1,0 +1,255 @@
+@media screen and (min-width: 850px) {
+  .msg {
+    display: grid;
+    grid-template-rows: 60px 1fr 60px;
+    grid-template-columns: 300px 2fr;
+    height: 100vh;
+    padding: 5px;
+    gap: 5px;
+  }
+
+  .header1 {
+    display: inline-flex;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .label1 {
+    padding-top: 5px;
+  }
+  .user {
+    padding-left: 10px;
+    padding-top: 4px;
+  }
+  .userpic {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: gray;
+  }
+  .options {
+    padding: 10px;
+    background-color: white;
+    position: fixed;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+    z-index: 1;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+  }
+  .settings {
+    padding-right: 10px;
+    padding-top: 4px;
+  }
+  .settingsicon {
+    width: 45px;
+    height: 45px;
+  }
+  .label1 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .createbtn {
+    margin-right: 0;
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+  }
+  .search:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .search {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    position: fixed;
+    width: 290px;
+  }
+  .search input {
+    width: 70%;
+    height: 35px;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 1px solid lightgray;
+    outline: none;
+
+    transition: 0.3s linear;
+  }
+  .search input:focus {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+    width: 100%;
+  }
+
+  .search button {
+    visibility: hidden;
+  }
+  .header2 {
+    text-align: center;
+    padding-top: 10px;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  .conversations {
+    overflow-y: scroll;
+  }
+  .conversationlist {
+    padding-top: 60px;
+  }
+  .conversations::-webkit-scrollbar {
+    width: 0;
+  }
+  .conversation {
+    height: 70px;
+    width: 100%;
+  }
+
+  .dialog {
+    overflow-y: scroll;
+  }
+  .dialog::-webkit-scrollbar {
+    width: 0;
+  }
+  .input {
+    border: 1px solid lightgray;
+    position: relative;
+    width: 50vh;
+    height: auto;
+    text-align: center;
+    margin-left: 0;
+    margin-right: auto;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px;
+    background-color: rgb(241, 241, 241);
+  }
+  .output {
+    border: 1px solid lightgray;
+    position: relative;
+    width: 50vh;
+    height: auto;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 0;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+    padding: 10px;
+  }
+  .sending {
+  }
+  .type {
+    width: 90%;
+    padding-left: 10px;
+    outline: none;
+    border: 0px;
+  }
+  .send {
+    visibility: hidden;
+  }
+  .footer1 {
+    padding-top: 20px;
+    text-align: center;
+  }
+  .footer2 {
+  }
+}
+@media screen and (max-width: 849px) {
+  .header2,
+  .dialog,
+  .footer2,
+  .footer1 {
+    visibility: hidden;
+  }
+  .msg {
+    display: block;
+  }
+  .header1 {
+    display: inline-flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .label1 {
+    padding-top: 5px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .user {
+    padding-right: 100px;
+    padding-left: 10px;
+    padding-top: 5px;
+  }
+  .userpic {
+    width: 45px;
+    height: 45px;
+    border-radius: 100px;
+    background-color: gray;
+  }
+  .settings {
+    position: relative;
+    margin-right: 0;
+    margin-left: auto;
+    padding-right: 10px;
+    padding-top: 4px;
+  }
+  .settingsicon {
+    width: 45px;
+    height: 45px;
+  }
+  .options {
+    padding: 10px;
+    background-color: white;
+    position: fixed;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    margin-top: 20px;
+    z-index: 1;
+    box-shadow: 0 6px 4px -4px rgba(0, 0, 0, 0.2);
+  }
+
+  .createbtn {
+    margin-right: 0;
+    border-radius: 40px;
+    width: 50px;
+    height: 50px;
+  }
+  .search:after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .search {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+    position: relative;
+    width: 98%;
+  }
+  .search input {
+    width: 100%;
+    height: 35px;
+    padding-left: 15px;
+    border-radius: 42px;
+    border: 1px solid lightgray;
+    outline: none;
+    position: relative;
+    transition: 0.3s linear;
+  }
+  .search input:focus {
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.2);
+  }
+
+  .search button {
+    width: 35px;
+    height: 35px;
+    background: none;
+    border: none;
+    position: absolute;
+    top: -2px;
+    right: 0;
+  }
+}
